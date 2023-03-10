@@ -58,7 +58,20 @@ Credit for functionality was copied from [this](https://rob.cogit8.org/posts/202
 
 &nbsp;
 ## Code Formatting
-[prismjs](https://prismjs.com/) is used for code formatting. It uses the autoloader functionality to dynamically load formatting languages. For the code formatting theme, I use a modified version of [VS Code Dark+](https://github.com/PrismJS/prism-themes/blob/master/themes/prism-vsc-dark-plus.css).
+[prismjs](https://prismjs.com/) is used for code formatting. It uses the autoloader functionality to dynamically load languages, removing the need to download all possible language parsers.
+
+```html
+  ...
+  </head>
+  <body>
+    <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+  ...
+  </body>
+  ...
+```
+
+For the code formatting theme, I use a modified version of [VS Code Dark+](https://github.com/PrismJS/prism-themes/blob/master/themes/prism-vsc-dark-plus.css).
 
 &nbsp;
 ## Architecture

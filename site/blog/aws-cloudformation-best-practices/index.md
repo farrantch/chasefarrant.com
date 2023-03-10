@@ -120,7 +120,7 @@ Resources:
 It's a common trope in software development - _naming things sucks._ Luckily for us, CloudFormation supports auto-generating the Physical Name for most resources! A major benefit to this approach is that CloudFormation can automagically replace resources without manual intervention. It simply creates a new resource with a _slightly different_ name alongside the old resource before deleting it. __TL;DR__ Don't use physical names if you can help it.
 
 ### Logical Name - The name of the resource _within_ the CloudFormation template.
-The best method for the Logical Name is to use the `Service Name` and `Resource Type` at the beginning of the string combined with a unique `Name` at the end describing the resource's purpose. The unique name distinguishes it from other resources within the template and makes it easier to make changes down the road. Sometimes the `Service Name` can be omitted when it's redundant or misleading. Ex: `AWS::EC2::VPC` could just be `Vpc`.
+The preferred format for the Logical Name is to use the `Service Name` and `Resource Type` at the beginning of the string combined with a unique `Name` at the end describing the resource's purpose. The unique name distinguishes it from other resources within the template and makes it easier to make changes down the road. Sometimes the `Service Name` can be omitted when it's redundant or misleading. Ex: `AWS::EC2::VPC` could just be `Vpc`.
 
 - Service Name: _Dynamodb_
 - Resource Type: _Table_
@@ -243,9 +243,9 @@ Working on a simple project with minimal requirements, you _could_ squeak by wit
 - Shared Databases
 - Shared Variables and Secrets
 
-Ultimately this helps prevent "hard" service -> service dependencies. Services shouldn't be required to be deployed in a specific order. That's a fundamental difference between infrastructure and services:
+Ultimately this helps prevent "hard" service -> service dependencies. Services shouldn't be required to be deployed in a specific order. That's a fundamental difference between infrastructure and a service:
 
-> _Infrastructure is inherently dependency bound; Services are not._
+> _Infrastructure is inherintely depedency driven; Services are not._
 
 
 
