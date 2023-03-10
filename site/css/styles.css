@@ -1,0 +1,45 @@
+body {
+    background-color:ivory;
+    color: rgb(20, 20, 20);
+    font-family: Helvetica;
+    max-width: 800px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+a:link, a:visited {
+    color: green;
+}
+
+div.name a:link, div.name a:visited {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.menubar a:link, div.menubar a:visited {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.menubar a:hover {
+    color:limegreen;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div.menubar a:active {
+    color: rgb(174, 128, 112);
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}

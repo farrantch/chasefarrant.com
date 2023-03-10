@@ -1,0 +1,13 @@
+{
+    "Parameters": {
+        "Environment": "prod",
+        "Prefix": "cf",
+        "RootDomain": "chasefarrant.com",
+        "ServiceName": "portfolio"
+    },
+    "Tags": {
+        "Environment": "prod",
+        "Prefix": "cf",
+        "Service": "portfolio"
+    }
+}

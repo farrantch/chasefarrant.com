@@ -1,0 +1,15 @@
+{
+    "Parameters": {
+        "Environment": "prod",
+        "GitHubRepoBranch": "main",
+        "GitHubRepoName": "chasefarrant.com",
+        "GitHubRepoOwner": "farrantch",
+        "Prefix": "cf",
+        "ServiceName": "portfolio"
+    },
+    "Tags": {
+        "Environment": "prod",
+        "Prefix": "cf",
+        "Service": "portfolio"
+    }
+}

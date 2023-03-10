@@ -1,0 +1,235 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Parameters:
+  Environment:
+    Type: String
+  Prefix:
+    Type: String
+  RootDomain:
+    Type: String
+  ServiceName:
+    Type: String
+Resources:
+  CertificateRoot:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      CertificateTransparencyLoggingPreference: ENABLED
+      DomainName: !Ref RootDomain
+      DomainValidationOptions:
+        - DomainName: !Ref RootDomain
+          HostedZoneId: !Ref Route53HostedZone
+      ValidationMethod: DNS
+  CertificateWww:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      CertificateTransparencyLoggingPreference: ENABLED
+      DomainName: !Sub www.${RootDomain}
+      DomainValidationOptions:
+        - DomainName: !Sub www.${RootDomain}
+          HostedZoneId: !Ref Route53HostedZone
+      ValidationMethod: DNS
+  CloudFrontDistributionRoot:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !Ref RootDomain
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          CachedMethods:
+            - HEAD
+            - GET
+          Compress: true
+          DefaultTTL: 86400
+          ForwardedValues:
+            QueryString: false
+          MaxTTL: 31536000
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+        Enabled: true
+        HttpVersion: http2
+        IPV6Enabled: true
+        Origins:
+          - CustomOriginConfig:
+              HTTPPort: 80
+              OriginKeepaliveTimeout: 5
+              OriginProtocolPolicy: http-only
+              OriginReadTimeout: 30
+              OriginSSLProtocols: 
+                - TLSv1.2
+            DomainName:
+              Fn::Select:
+                - 1
+                - Fn::Split: [ 'http://', !GetAtt S3BucketRoot.WebsiteURL ]
+            Id: S3Origin
+            OriginCustomHeaders:
+              - HeaderName: referer
+                HeaderValue:
+                  Fn::Select:
+                    - 2
+                    - Fn::Split:
+                        - /
+                        - Ref: AWS::StackId
+        PriceClass: PriceClass_All
+        ViewerCertificate:
+          AcmCertificateArn: !Ref "CertificateRoot"
+          SslSupportMethod: sni-only
+  CloudFrontDistributionWww:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !Sub www.${RootDomain}
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          CachedMethods:
+            - HEAD
+            - GET
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          Compress: true
+          ResponseHeadersPolicyId: !Ref CloudFrontResponeHeadersPolicyWww
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+        Enabled: true
+        HttpVersion: http2
+        IPV6Enabled: true
+        Origins:
+          - CustomOriginConfig:
+              HTTPPort: 80
+              OriginKeepaliveTimeout: 5
+              OriginProtocolPolicy: http-only
+              OriginReadTimeout: 30
+              OriginSSLProtocols: 
+                - TLSv1.2
+            DomainName:
+              Fn::Select:
+                - 1
+                - Fn::Split: [ 'http://', !GetAtt S3BucketWww.WebsiteURL ]
+            Id: S3Origin
+            OriginCustomHeaders:
+              - HeaderName: referer
+                HeaderValue:
+                  Fn::Select:
+                    - 2
+                    - Fn::Split:
+                        - /
+                        - Ref: AWS::StackId
+        PriceClass: PriceClass_All
+        Restrictions:
+          GeoRestriction:
+            RestrictionType: blacklist
+            Locations:
+              - CN
+              - RU
+        ViewerCertificate:
+          AcmCertificateArn: !Ref "CertificateWww"
+          SslSupportMethod: sni-only
+  CloudFrontResponeHeadersPolicyWww:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties: 
+      ResponseHeadersPolicyConfig:
+        CustomHeadersConfig: 
+          Items: 
+            - Header: Cache-Control
+              Override: false
+              Value: max-age=31536000
+        Name: !Sub ${Prefix}-${Environment}-${ServiceName}-CloudFrontResponseHeadersPolicyWww
+  Route53HostedZone:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: chasefarrant.com
+  Route53RecordSetGroupMx:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !Ref Route53HostedZone
+      RecordSets:
+        - Name: !Sub ${RootDomain}
+          TTL: 600
+          Type: MX
+          ResourceRecords:
+            - '1 ASPMX.L.GOOGLE.COM.'
+            - '5 ALT1.ASPMX.L.GOOGLE.COM.'
+            - '5 ALT2.ASPMX.L.GOOGLE.COM.'
+            - '10 ALT3.ASPMX.L.GOOGLE.COM.'
+            - '10 ALT4.ASPMX.L.GOOGLE.COM.'
+  Route53RecordSetGroupRoot:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !Ref Route53HostedZone
+      RecordSets:
+        - Name: !Sub ${RootDomain}
+          Type: A
+          AliasTarget:
+            HostedZoneId: Z2FDTNDATAQYW2
+            DNSName: !GetAtt "CloudFrontDistributionWww.DomainName"
+  Route53RecordSetGroupWww:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !Ref Route53HostedZone
+      RecordSets:
+        - Name: !Sub www.${RootDomain}
+          Type: A
+          AliasTarget:
+            HostedZoneId: Z2FDTNDATAQYW2
+            DNSName: !GetAtt "CloudFrontDistributionWww.DomainName"
+  S3BucketRoot:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        RedirectAllRequestsTo:
+          HostName: !Sub "www.${RootDomain}"
+          Protocol: https
+  S3BucketWww:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+  S3BucketPolicyRoot:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3BucketRoot
+      PolicyDocument:
+        Statement:
+        - Action: s3:GetObject
+          Effect: Allow
+          Resource: !Sub ${S3BucketRoot.Arn}/*
+          Principal:
+            AWS: '*'
+          Condition:
+            StringEquals:
+              aws:Referer: "abcd"
+  S3BucketPolicyWww:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3BucketWww
+      PolicyDocument:
+        Statement:
+        - Action: s3:GetObject
+          Effect: Allow
+          Resource: 
+            - !Sub ${S3BucketWww.Arn}/*
+          Principal:
+            AWS: '*'
+          Condition:
+            StringEquals:
+              aws:Referer:
+                - Fn::Select:
+                  - 2
+                  - Fn::Split:
+                      - /
+                      - Ref: AWS::StackId
+Outputs:
+  CloudFrontDistributionIdWww:
+    Description: The CloudFront Distribution for the website.
+    Value: !Ref CloudFrontDistributionWww
+  S3BucketNameWww:
+    Description: The S3 Bucket used to host the website.
+    Value: !Ref S3BucketWww

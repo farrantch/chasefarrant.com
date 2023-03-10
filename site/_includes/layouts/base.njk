@@ -1,0 +1,39 @@
+---
+title: chase farrant
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {# <script defer src="https://kit.fontawesome.com/e3d6b2d7b3.js" crossorigin="anonymous"></script> #}
+    <link href="{{ '/css/styles.css' | url | bust }}" rel="stylesheet" />
+    <link href="{{ '/css/prism.css' | url | bust }}" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="description" content="{{ description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% favicons 'favicon.svg', appleIconBgColor='#123' %}
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {# <script src="{{ '/js/prism.js' | url | bust }}"></script> #}
+    <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    <div class="name">
+        <h3><a href="/">chase farrant</a></h3>
+    </div>
+    <div class="menubar">
+        <a href="/about">about</a> &nbsp; | &nbsp; 
+        <a href="/blog">blog</a> &nbsp; | &nbsp; 
+        <a href="/projects">projects</a> &nbsp; 
+    </div>
+    &nbsp;
+    {{ content | safe }}
+  </body>
+  <footer>
+    &nbsp;
+    <hr style="text-align:left;margin-left:0">
+    <p>
+        <b> &copy; 2023 </b> Chase Farrant 
+    </p>
+  </footer>
+</html>
