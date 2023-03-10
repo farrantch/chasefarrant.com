@@ -1,7 +1,7 @@
 ---
 date_created: '2023-02-23'
 date_updated: '2023-03-08'
-description: Here is what I consider to be the most important AWS CloudFormation Best Practices that every CloudFormation developer should know.
+description: Here are some important practices that every CloudFormation developer should know.
 layout: layouts/base.njk
 tags:
   - blog
