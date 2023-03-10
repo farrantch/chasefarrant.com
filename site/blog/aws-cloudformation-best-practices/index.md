@@ -284,7 +284,7 @@ To share values between the shared nested stacks, I prefer NOT to use outputs as
 
 CloudFormation Exports often gets a bad rep for being difficult to update once used. It's true, using them can significantly increase the time it takes to make simple changes. _But,_ there is a significant upside to them.
 
-> _By blocking updates to resources that are already being consumed, using exports helps prevent deploying breaking infrastructure changes by forcing all changes to be backwards compatible.
+> _By blocking updates to resources that are already being consumed, using exports helps prevent deploying breaking infrastructure changes by forcing all changes to be backwards compatible._
 
 For example, let's say a Lambda depends on an S3 bucket in a different stack. Without exports, the S3 bucket could be ripped out from underneath the Lambda without warning. The Lambda would be none the wiser until trying to run. Using an export would have prevented the S3 bucket change from happening and encouraged an alternative approach, perhaps standing up a new S3 Bucket first and changing the Lambda over to it.
 

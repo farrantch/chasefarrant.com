@@ -82,6 +82,19 @@ Resources:
       DistributionConfig:
         Aliases:
           - !Sub www.${RootDomain}
+        CacheBehaviors:
+          - AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+            CachedMethods:
+            - HEAD
+            - GET
+            CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+            PathPattern: '*/'
+            ResponseHeadersPolicyId: !Ref CloudFrontResponeHeadersPolicyNever
+            TargetOriginId: S3Origin
+            ViewerProtocolPolicy: redirect-to-https
         DefaultCacheBehavior:
           AllowedMethods:
             - GET
@@ -92,7 +105,7 @@ Resources:
             - GET
           CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
           Compress: true
-          ResponseHeadersPolicyId: !Ref CloudFrontResponeHeadersPolicyWww
+          ResponseHeadersPolicyId: !Ref CloudFrontResponeHeadersPolicyForever
           TargetOriginId: S3Origin
           ViewerProtocolPolicy: redirect-to-https
         Enabled: true
@@ -129,7 +142,7 @@ Resources:
         ViewerCertificate:
           AcmCertificateArn: !Ref "CertificateWww"
           SslSupportMethod: sni-only
-  CloudFrontResponeHeadersPolicyWww:
+  CloudFrontResponeHeadersPolicyForever:
     Type: AWS::CloudFront::ResponseHeadersPolicy
     Properties: 
       ResponseHeadersPolicyConfig:
@@ -138,7 +151,17 @@ Resources:
             - Header: Cache-Control
               Override: false
               Value: max-age=31536000
-        Name: !Sub ${Prefix}-${Environment}-${ServiceName}-CloudFrontResponseHeadersPolicyWww
+        Name: !Sub ${Prefix}-${Environment}-${ServiceName}-CloudFrontResponseHeadersPolicyForever
+  CloudFrontResponeHeadersPolicyNever:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties: 
+      ResponseHeadersPolicyConfig:
+        CustomHeadersConfig: 
+          Items: 
+            - Header: Cache-Control
+              Override: false
+              Value: max-age=0
+        Name: !Sub ${Prefix}-${Environment}-${ServiceName}-CloudFrontResponseHeadersPolicyNever
   Route53HostedZone:
     Type: AWS::Route53::HostedZone
     Properties:
