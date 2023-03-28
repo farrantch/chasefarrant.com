@@ -25,6 +25,6 @@ Schedule a meeting with me! <a href="https://cal.com/chasefarrant/meetandgreet" 
 
 GitHub: <a href="https://github.com/farrantch" target="_blank" style="text-decoration:none">[&#11008;]</a>
 
-Linkedin: <a href="https://www.linkedin.com/in/chase-farrant-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a>
+Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a>
 
 Resume: <a href="/ChaseFarrant-Resume.pdf" target="_blank" style="text-decoration:none">[&#11008;]</a>
