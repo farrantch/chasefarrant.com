@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/farrantch/chasefarrant.com#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "eleventy-plugin-gen-favicons": "^1.1.2",
     "eleventy-plugin-lazyimages": "^2.1.2",
     "markdown-it-anchor": "^8.6.7"

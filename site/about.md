@@ -8,7 +8,7 @@ Back in college, I used to play guitar in a band called <a href="https://open.sp
 
 I love the outdoors and I'm an avid snow skier and dirt biker. I have recently overhauled the 3 dirtbikes I used to ride growing up.
 
-Finally, I love dabbling in side projects. If you have a project where you need DevOps or Cloud expertise, hit me up! I also have experience quickly spinning up backend APIs with python and FastAPI. You may have noticed that I am absolutely _not_ a front-end developer!
+Finally, I love dabbling in side projects. If you have a project where you need DevOps or Cloud expertise, hit me up! I also have experience quickly spinning up backend APIs with python and FastAPI. You may have noticed that I am absolutely _not_ a front-end developer.
 
 
 &nbsp;
@@ -25,6 +25,6 @@ Schedule a meeting with me! <a href="https://cal.com/chasefarrant/meetandgreet" 
 
 GitHub: <a href="https://github.com/farrantch" target="_blank" style="text-decoration:none">[&#11008;]</a>
 
-Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a>
+<!-- Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a> -->
 
 Resume: <a href="/ChaseFarrant-Resume.pdf" target="_blank" style="text-decoration:none">[&#11008;]</a>
