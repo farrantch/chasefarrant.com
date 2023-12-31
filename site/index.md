@@ -5,7 +5,7 @@ layout: layouts/base.njk
 
 &nbsp;
 # Hola, I'm Chase!
- This is my personal website that I am using to document and share my work with others. I'm an Engineer that specializes in all things automation, cloud, devops and sometimes backend development. After hours I like to dabble in other projects that interest me.
+ This is my personal website that I use to document and share my work with others. I'm an Engineer that specializes in all things automation, cloud, devops and sometimes backend development. I love to keep things simple and this site is no exception. After hours I like to dabble in other projects that interest me.
 
 <br>
 

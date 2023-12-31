@@ -58,7 +58,7 @@ Okay, that doesn't sound _that_ unreasonable at face value. I called up a buddy 
 
 > _"Yeah, in fact, we often follow the same pattern." - Buddy_
 
-Hmmmm. At this point I felt like I was taking crazy pills. Why would you re-invent the wheel and modularize a generic resource that has already been tested? Here is my opinion on why this is usually a bad idea:
+Hmmmm. At this point I felt like I was taking crazy pills. Why would you re-invent the wheel and modularize a generic resource that has already been tested by someone else? Here is my opinion on why this is usually a bad idea:
 
 A Terraform module is an abstraction. Abstractions are meant to take something complex and simplify it. Individual resources are rarely complex. Sure, they might be part of a more complex solution, but that doesn't make the resource itself complex. An S3 bucket can be configured an infite number of ways. If you modularize it, over time you will end up having as many parameters as the original resource itself.
 
@@ -67,4 +67,4 @@ Hashicorp also tends to think this is usually a bad idea - <a href="https://deve
 Disclaimer: It's okay to modularize a resources if it's configured for a very specific use case.
 
 &nbsp;
-## Pattern 3 - Coming Soon
+## Pattern 3 - Infrastructure Sprawl
