@@ -18,7 +18,7 @@ _last updated: {{ date_updated }}_
 
 &nbsp;
 ## Introduction
-Development speed is one of the most important factors to optimize for when developing software. Speed delivers features. Speed enables flexibility. Speed capitalizes on new opportunities. Speed beats competitors to market. Many other factors, such as maintainability or complexity, are essential - because they directly impact development speed. It's hard to deliver features in a timely manner when the solution is a spider-web.
+Development speed is one of the most important factors to optimize for when developing software. Speed delivers features. Speed enables flexibility. Speed capitalizes on new opportunities. Speed beats competitors to market. Many other factors, such as maintainability or complexity, are essential because they directly impact development speed. It's hard to deliver features in a timely manner when the solution is a spider web.
 
 > _Your goal when developing software should be to keep your solution as simple as possible for as long as possible._
 
