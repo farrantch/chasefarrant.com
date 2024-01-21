@@ -1,7 +1,7 @@
 body {
-    background-color:rgb(255, 255, 255);
-    color: rgb(20, 20, 20);
-    font-family: Helvetica;
+    background-color:#1B1B1B;
+    color: #E0E2DB;
+    font-family: 'Noto Sans';
     max-width: 800px;
     width:90%;
     margin-left:auto;
@@ -10,32 +10,43 @@ body {
 
 h1 {
     margin-bottom: 0;
+    font-family: 'Quicksand';
+    color: #E6AF2E;
+}
+
+h2 {
+    font-family: 'Quicksand';
+    color: #E6AF2E;
 }
 
 a:link, a:visited {
-    color: green;
+    color: #7EBDC3;
 }
 
 div.name a:link, div.name a:visited {
-    color: rgb(20, 20, 20);
+    color: #4F9D69;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Quicksand';
 }
 
 div.menubar a:link, div.menubar a:visited {
-    color: green;
+    color: #F27059;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Quicksand';
 }
 
 div.menubar a:hover {
-    color:limegreen;
+    color:#F27059;
     font-weight: bold;
     text-decoration: underline;
+    font-family: 'Quicksand';
 }
 
 div.menubar a:active {
     color: rgb(174, 128, 112);
+    font-family: 'Quicksand';
 }
 
 img {

@@ -3,9 +3,10 @@ description: The personal website of Chase Farrant.
 layout: layouts/base.njk
 ---
 
-&nbsp;
-# Hola, I'm Chase!
- This is my personal website that I use to document and share my work with others. I'm an Engineer that specializes in all things automation, cloud, devops and sometimes backend development. I love to keep things simple and this site is no exception. After hours I like to dabble in other projects that interest me.
+# Welcome
+ I use this website to document and share my work with others.
+
+I'm an Engineer specializing in automation, cloud, devops, and backend development. I love to keep things simple, and this site is no exception. After hours, I like to dabble in other projects that interest me.
 
 <br>
 

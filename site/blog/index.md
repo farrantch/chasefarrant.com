@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 ---
 
-# latest posts
+# Latest Posts
 
 <ul>
     {%- for post in collections.blog reversed -%}

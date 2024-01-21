@@ -3,7 +3,7 @@ description: Check out my latest blog projects.
 layout: layouts/base.njk
 ---
 
-# latest projects
+# Latest Projects
 
 <ul>
     {%- for project in collections.projects reversed -%}

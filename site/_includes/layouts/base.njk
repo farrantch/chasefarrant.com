@@ -1,17 +1,18 @@
 ---
-title: chase farrant
+title: Chase Farrant
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    {# <script defer src="https://kit.fontawesome.com/e3d6b2d7b3.js" crossorigin="anonymous"></script> #}
     <link href="{{ '/css/styles.css' | url | bust }}" rel="stylesheet" />
     <link href="{{ '/css/prism.css' | url | bust }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <meta charset="utf-8">
     <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% favicons 'favicon.svg', appleIconBgColor='#123' %}
+    {% favicons 'favicon.png', appleIconBgColor='#123' %}
     <title>{{ title }}</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX4DD1Y9MK"></script>
@@ -26,12 +27,12 @@ title: chase farrant
     <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
     <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
     <div class="name">
-        <h3><a href="/">chase farrant</a></h3>
+        <h3><a href="/">Chase Farrant</a></h3>
     </div>
     <div class="menubar">
-        <a href="/about">about</a> &nbsp; | &nbsp; 
-        <a href="/blog">blog</a> &nbsp; | &nbsp; 
-        <a href="/projects">projects</a> &nbsp; 
+        <a href="/about">About</a> &nbsp; | &nbsp;
+        <a href="/blog">Blog</a> &nbsp; | &nbsp;
+        <a href="/projects">Projects</a> &nbsp;
     </div>
     &nbsp;
     {{ content | safe }}

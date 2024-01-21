@@ -3,16 +3,15 @@ description: Everything you need to know about me.
 layout: layouts/base.njk
 ---
 
-# about me
-Back in college, I used to play guitar in a band called <a href="https://open.spotify.com/artist/1XvxAZS5waAnVv4OEnZDVA" target="_blank">Catch Amy</a>. These recordings are from ~2012 and our album is _really_ more of a demo tape! I do miss writing and producing music. Hopefully, that is something I can get back to eventually.
+# Background
+Back in college, I used to play guitar in a band called <a href="https://open.spotify.com/artist/1XvxAZS5waAnVv4OEnZDVA" target="_blank">Catch Amy</a>. These recordings are from ~2012, and our album is really more of a demo tape. I do miss writing and producing music. Hopefully, that is something I can get back to eventually.
 
-I love the outdoors and I'm an avid snow skier and dirt biker. I have recently overhauled the 3 dirtbikes I used to ride growing up.
+I love dabbling in side projects. If you have a project needing DevSecOps or Cloud expertise, hit me up! I also have experience quickly spinning up backend APIs with Python and FastAPI. I am not a front-end web developer (in case it wasn't obvious). However, I embrace my weakness by utilizing simple design philosophies. This site is held together with plain ol' HTML and CSS.
 
-Finally, I love dabbling in side projects. If you have a project where you need DevOps or Cloud expertise, hit me up! I also have experience quickly spinning up backend APIs with python and FastAPI. You may have noticed that I am absolutely _not_ a front-end developer.
-
+I love the outdoors and grew up snow skiing and riding dirt bikes. I recently overhauled the three dirt bikes I used to ride growing up.
 
 &nbsp;
-# contact
+# Contact
 
 Email: hello [at] chasefarrant.com
 
@@ -21,10 +20,10 @@ Schedule a meeting with me! <a href="https://cal.com/chasefarrant/meetandgreet" 
 
 
 &nbsp;
-# links
+# Links
 
 GitHub: <a href="https://github.com/farrantch" target="_blank" style="text-decoration:none">[&#11008;]</a>
 
-<!-- Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a> -->
+Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">[&#11008;]</a>
 
 Resume: <a href="/ChaseFarrant-Resume.pdf" target="_blank" style="text-decoration:none">[&#11008;]</a>
