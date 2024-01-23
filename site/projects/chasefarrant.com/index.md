@@ -98,6 +98,7 @@ Instead of linking to Google Fonts, I downloaded the fonts locally using [this](
 
   - Headings - _Quicksand_
   - Body - _Noto Sans_
+  - Code - _Jetbrains Mono_
 
 
 &nbsp;
