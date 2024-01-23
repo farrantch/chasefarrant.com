@@ -92,13 +92,16 @@ For the code formatting theme, I use a modified version of [VS Code Dark+](https
 ```
 
 &nbsp;
-## CSS
+## Fonts
 
-Fonts:
+Instead of linking to Google Fonts, I downloaded the fonts locally using [this](https://www.reddit.com/r/webdev/comments/sfnk0l/ive_seen_a_number_posts_about_improving_page/) guide and the [google-webfonts-helper](https://gwfh.mranftl.com/fonts) tool.
+
   - Headings - _Quicksand_
   - Body - _Noto Sans_
 
-Colors:
+
+&nbsp;
+## Colors:
   - ![#f03c15](https://placehold.co/15x15/1B1B1B/1B1B1B.png) #1B1B1B
   - ![#f03c15](https://placehold.co/15x15/E6AF2E/E6AF2E.png) #E6AF2E
   - ![#f03c15](https://placehold.co/15x15/4F9D69/4F9D69.png) #4F9D69
