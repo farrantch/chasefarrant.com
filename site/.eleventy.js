@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('blog/**/*.webp')
     eleventyConfig.addPassthroughCopy('css')
     eleventyConfig.addPassthroughCopy('js')
+    eleventyConfig.addPassthroughCopy('fonts')
     eleventyConfig.addPassthroughCopy('*resume*')
     // Add folders to watch for changes
     eleventyConfig.addWatchTarget('blog')
