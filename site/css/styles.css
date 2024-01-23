@@ -121,6 +121,11 @@ div.menubar a:active {
     font-family: 'Quicksand';
 }
 
+code {
+    font-family: 'monospace';
+    font-size: 12px;
+}
+
 img {
     max-width: 100%;
     width: auto;
