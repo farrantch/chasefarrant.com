@@ -10,19 +10,19 @@ title: chasefarrant.com
 ---
 
 # {{ title }}
-#### GitHub Source <a href="https://github.com/farrantch/chasefarrant.com" target="_blank" style="text-decoration:none">[&#11008;]</a>
+#### GitHub Source <a href="https://github.com/farrantch/chasefarrant.com" target="_blank" style="text-decoration:none">&#11008;</a>
 _date created: {{ date_created }}_ \
 _last updated: {{ date_updated }}_
 
 
 &nbsp;
 ## Overview
-Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Because of this, I have a huge soft spot for minimalist websites. Some famous examples include:
+Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Because of this, I have a huge soft spot for minimalist websites that convey information cleanly and concisely. Some famous examples include:
  - [https://motherfuckingwebsite.com](https://motherfuckingwebsite.com)
  - [https://berkshirehathaway.com](https://berkshirehathaway.com)
- - [https://www.vulfpeck.com/](https://www.vulfpeck.com/)
-
-Not wanting to disappoint, I wanted this website to be similar. This website uses the [eleventy](https://www.11ty.dev/) (11ty) framework. I wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. It also looks great on mobile!
+ - [https://www.vulfpeck.com](https://www.vulfpeck.com/)
+ 
+ So, ideally, this website would be of a similar nature. I also wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. I ended up stumbling upon the [eleventy](https://www.11ty.dev/) (11ty) framework, and it fits this niche perfectly.
 
 
 &nbsp;
