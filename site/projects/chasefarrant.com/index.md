@@ -57,13 +57,12 @@ Output:
 [prismjs](https://prismjs.com/) is used for code formatting. It uses the autoloader functionality to dynamically load languages, removing the need to download all possible language parsers.
 
 ```html
+  <head>
   ...
-  </head>
-  <body>
     <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
     <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   ...
-  </body>
+  </head>
   ...
 ```
 
@@ -93,7 +92,6 @@ For the code formatting theme, I use a modified version of [VS Code Dark+](https
 
 &nbsp;
 ## Fonts
-
 Instead of linking to Google Fonts, I downloaded the fonts locally using [this](https://www.reddit.com/r/webdev/comments/sfnk0l/ive_seen_a_number_posts_about_improving_page/) guide and the [google-webfonts-helper](https://gwfh.mranftl.com/fonts) tool.
 
   - Headings - _Quicksand_
@@ -109,3 +107,11 @@ Instead of linking to Google Fonts, I downloaded the fonts locally using [this](
   - ![#f03c15](https://placehold.co/15x15/F27059/F27059.png) #F27059
   - ![#f03c15](https://placehold.co/15x15/7EBDC3/7EBDC3.png) #7EBDC3
   - ![#f03c15](https://placehold.co/15x15/E0E2DB/E0E2DB.png) #E0E2DB
+c
+## Performance
+With these tweaks, the site easily achieves a rating of 100 on all metrics in Google Pagespeed:
+
+
+![alt-text](./pagespeed-mobile.webp)
+
+&nbsp;
