@@ -5,7 +5,8 @@ const { DateTime } = require("luxon");
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(faviconsPlugin, {});
     eleventyConfig.addPlugin(lazyImagesPlugin);
-    eleventyConfig.addPassthroughCopy('**/*.webp')
+    eleventyConfig.addPassthroughCopy('blog/**/*.webp')
+    eleventyConfig.addPassthroughCopy('projects/**/*.webp')
     eleventyConfig.addPassthroughCopy('css')
     eleventyConfig.addPassthroughCopy('js')
     eleventyConfig.addPassthroughCopy('fonts')

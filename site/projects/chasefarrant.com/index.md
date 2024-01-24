@@ -1,6 +1,6 @@
 ---
 date_created: '2023-02-28'
-date_updated: '2024-01-20'
+date_updated: '2024-01-23'
 layout: layouts/base.njk
 tags:
   - projects
@@ -17,7 +17,12 @@ _last updated: {{ date_updated }}_
 
 &nbsp;
 ## Overview
-This website uses the [eleventy](https://www.11ty.dev/) (11ty) framework. I wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way.
+Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Because of this, I have a huge soft spot for minimalist websites. Some famous examples include:
+ - [https://motherfuckingwebsite.com](https://motherfuckingwebsite.com)
+ - [https://berkshirehathaway.com](https://berkshirehathaway.com)
+ - [https://www.vulfpeck.com/](https://www.vulfpeck.com/)
+
+Not wanting to disappoint, I wanted this website to be similar. This website uses the [eleventy](https://www.11ty.dev/) (11ty) framework. I wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. It also looks great on mobile!
 
 
 &nbsp;
@@ -63,7 +68,6 @@ Output:
     <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   ...
   </head>
-  ...
 ```
 
 For the code formatting theme, I use a modified version of [VS Code Dark+](https://github.com/PrismJS/prism-themes/blob/master/themes/prism-vsc-dark-plus.css).
@@ -107,7 +111,8 @@ Instead of linking to Google Fonts, I downloaded the fonts locally using [this](
   - ![#f03c15](https://placehold.co/15x15/F27059/F27059.png) #F27059
   - ![#f03c15](https://placehold.co/15x15/7EBDC3/7EBDC3.png) #7EBDC3
   - ![#f03c15](https://placehold.co/15x15/E0E2DB/E0E2DB.png) #E0E2DB
-c
+
+&nbsp;
 ## Performance
 With these tweaks, the site easily achieves a rating of 100 on all metrics in Google Pagespeed:
 
