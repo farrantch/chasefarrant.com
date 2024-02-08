@@ -78,9 +78,12 @@
     src: url('../fonts/jetbrains-mono-v18-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+html {
+    background-color:#1B1B1B;
+}
+
 
 body {
-    background-color:#1B1B1B;
     color: #E0E2DB;
     font-family: 'Noto Sans';
     max-width: 800px;
