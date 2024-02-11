@@ -86,7 +86,7 @@ html {
 body {
     color: #E0E2DB;
     font-family: 'Noto Sans';
-    max-width: 800px;
+    max-width: 1000px;
     width:90%;
     margin-left:auto;
     margin-right:auto;
@@ -115,12 +115,15 @@ div.name a:link, div.name a:visited {
     color: #4F9D69;
     text-decoration: none;
     font-family: 'Quicksand';
+    font-size: 22px;
 }
 
 div.menubar a:link, div.menubar a:visited {
     color: #F27059;
     text-decoration: none;
     font-family: 'Quicksand';
+    font-size: 22px;
+    font-weight: 500;
 }
 
 div.menubar a:hover {
