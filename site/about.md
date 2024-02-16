@@ -15,15 +15,15 @@ Back in college, I used to play guitar in a band called <a href="https://open.sp
 
 Email: hello [at] chasefarrant.com
 
-Schedule a meeting with me! <a href="https://cal.com/chasefarrant/meetandgreet" target="_blank" style="text-decoration:none">&#11008;</a>
+Schedule a meeting with me! <a href="https://cal.com/chasefarrant/meetandgreet" target="_blank" style="text-decoration:none">&#11016;</a>
 
 
 
 &nbsp;
 # Links
 
-GitHub: <a href="https://github.com/farrantch" target="_blank" style="text-decoration:none">&#11008;</a>
+GitHub: <a href="https://github.com/farrantch" target="_blank" style="text-decoration:none">&#11016;</a>
 
-Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">&#11008;</a>
+Linkedin: <a href="https://www.linkedin.com/in/chase-f-58399b65/" target="_blank" style="text-decoration:none">&#11016;</a>
 
-Resume: <a href="/ChaseFarrant-Resume.pdf" target="_blank" style="text-decoration:none">&#11008;</a>
+Resume: <a href="/ChaseFarrant-Resume.pdf" target="_blank" style="text-decoration:none">&#11016;</a>

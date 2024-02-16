@@ -10,7 +10,7 @@ title: chasefarrant.com
 ---
 
 # {{ title }}
-#### GitHub Source <a href="https://github.com/farrantch/chasefarrant.com" target="_blank" style="text-decoration:none">&#11008;</a>
+#### GitHub Source <a href="https://github.com/farrantch/chasefarrant.com" target="_blank" style="text-decoration:none">&#11016;</a>
 _date created: {{ date_created }}_ \
 _last updated: {{ date_updated }}_
 
@@ -114,7 +114,7 @@ Instead of linking to Google Fonts, I downloaded the fonts locally using [this](
 
 &nbsp;
 ## Performance
-With these tweaks, the site easily achieves a rating of 100 on all metrics in Google Pagespeed:
+With these tweaks, the site easily achieves a rating of 100/100 on all metrics in Google Pagespeed:
 
 
 ![alt-text](./pagespeed-mobile.webp)

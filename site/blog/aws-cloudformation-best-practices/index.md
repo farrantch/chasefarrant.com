@@ -189,8 +189,8 @@ _Pro-tip:_ Use shortcuts within your IDE to quickly collapse code to a specific 
 ## Catch errors earlier with `cfn-lint`
 `cfn-lint` is a CLI linting tool that is incredibly useful for discovering template issues before they are deployed. This dramatically reduces the time it takes to make template changes. VSCode also has a plugin that enables linting directly within your IDE.
 
-1) Make sure cfn-lint is installed ([link](https://github.com/aws-cloudformation/cfn-lint))
-2) Install the "CloudFormation Linter" extension within VSCode ([link](https://marketplace.visualstudio.com/items?itemName=kddejong.vscode-cfn-lint))
+1) Make sure cfn-lint is installed [&#11016;](https://github.com/aws-cloudformation/cfn-lint)
+2) Install the "CloudFormation Linter" extension within VSCode [&#11016;](https://marketplace.visualstudio.com/items?itemName=kddejong.vscode-cfn-lint)
 
 
 
