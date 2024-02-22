@@ -26,6 +26,12 @@ Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Be
 
 
 &nbsp;
+## Why Eleventy?
+I love the simplicity of Markdown and wanted that to be the primary format - but Markdown alone isn't enough. 11ty allows you to use Markdown, Nunjucks, Handlebars, WebC, EJS, and raw HTML - all within the same template!
+
+With the built-in functionality of multiple languages and frameworks, developers can structure their projects as they see fit and pull in data from various sources, e.g., JSON, YAML, or even external APIs. The hot-reload functionality allows you to quickly see changes in the browser without having to rebuild manually.
+
+&nbsp;
 ## Plugins
 Here are a few 11ty plugins that I enabled:
 - __Favicon Generator__ - Automatically generates all the different favicons required to provide the best experience for all users.
@@ -74,6 +80,7 @@ For the code formatting theme, I use a modified version of [VS Code Dark+](https
 
 &nbsp;
 ## Architecture
+The infrastructure is quite simple and deployed from a single CloudFormation template.
 ```
                       ┌────────────┐
                       │            │
@@ -93,15 +100,17 @@ For the code formatting theme, I use a modified version of [VS Code Dark+](https
                                                          │                        │
                                                          └────────────────────────┘
 ```
+ There is also a separate CloudFormation template for CodePipeline that automatically deploys updates.
 
 &nbsp;
 ## Fonts
-Instead of linking to Google Fonts, I downloaded the fonts locally using [this](https://www.reddit.com/r/webdev/comments/sfnk0l/ive_seen_a_number_posts_about_improving_page/) guide and the [google-webfonts-helper](https://gwfh.mranftl.com/fonts) tool.
+Instead of external links to Google Fonts, I downloaded the fonts locally using [this](https://www.reddit.com/r/webdev/comments/sfnk0l/ive_seen_a_number_posts_about_improving_page/) guide and the [google-webfonts-helper](https://gwfh.mranftl.com/fonts) tool.
 
   - Headings - _Quicksand_
   - Body - _Noto Sans_
   - Code - _Jetbrains Mono_
 
+ Doing this reduces the number of API calls to external URLs and improves performance.
 
 &nbsp;
 ## Colors:

@@ -1,0 +1,64 @@
+Level 1:
+- Build on commit to main
+- Deploy to Dev after build
+
+Level 2:
+- Build on pull requests to main
+- Lockdown PR approvers
+
+Level 3:
+- Run linting
+
+Level 4:
+- Run 
+
+
+Run tests
+Run linting
+Validate Formatting
+
+Security Vulnerability Scanning
+formatting
+a
+
+Deploy to other environments
+
+Blue / Green or Rolling Deployments
+Rollback functionality
+
+Monitor healtchecks during Deployments
+Run DB scripts during deployment
+
+Ephimeral environments
+
+Unit tests
+
+Performance Testing
+
+Smoke Tests
+Integration Tests
+
+Check for backwards compatibility
+
+Versioning system
+
+
+
+
+
+VPC
+NAT
+Load Balancer?
+CICD Pipeline
+Codestar GitHub connection
+ECS Cluster
+VPN
+Alerts
+DNS
+Centralized Logging
+Security Groups
+
+StackSet
+Backup Configuration
+
+Dashboard?
