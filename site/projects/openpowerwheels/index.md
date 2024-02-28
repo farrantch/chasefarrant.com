@@ -1,6 +1,5 @@
 ---
-date_created: '2024-01-23'
-date_updated: '2024-01-23'
+date: '2024-01-23'
 layout: layouts/base.njk
 tags:
   - projects
@@ -10,10 +9,9 @@ title: OpenPowerWheels
 ---
 
 # {{ title }}
-#### GitHub Source <a href="https://github.com/farrantch/openpowerwheels" target="_blank" style="text-decoration:none">&#11008;</a>
-_date created: {{ date_created }}_ \
-_last updated: {{ date_updated }}_
+_Created on {{ page.date | asPostDate }}_
 
+#### GitHub Source <a href="https://github.com/farrantch/openpowerwheels" target="_blank" style="text-decoration:none">&#11016;</a>
 
 &nbsp;
 ## Overview

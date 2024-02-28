@@ -1,6 +1,5 @@
 ---
-date_created: '2023-12-06'
-date_updated: '2024-01-20'
+date: '2023-12-06'
 description: To foster early growth, steer clear of over-engineering.
 layout: layouts/base.njk
 tags:
@@ -11,8 +10,7 @@ title: Infrastructure Patterns That Startups Should Avoid
 ---
 
 # {{ title }}
-_date created: {{ date_created }}_ \
-_last updated: {{ date_updated }}_
+_Created on {{ page.date | asPostDate }}_
 
 &nbsp;
 ## Introduction
@@ -65,6 +63,6 @@ I once worked with a DevSecOps division that mandated all Terraform resources sh
 
 A Terraform module should be an abstraction. Abstractions are meant to take something complex and simplify it. Individual resources are rarely complex. Sure, they might be a part of a more complex solution, but that doesn't make the resource itself complicated. An S3 bucket can be configured in an infinite number of ways. By modularizing a generic resource, over time, you end up having as many parameters to the module as the original resource itself.
 
-Also, individual Terraform resources are already tested and versioned by the resource owner. Having to write more tests and manage more module versions adds significant overhead. Not surprisingly, Hashicorp also tends to think this is usually a bad idea <a href="https://developer.hashicorp.com/terraform/language/modules/develop#when-to-write-a-module" target="_blank" style="text-decoration:none">&#11016;</a>
+Individual Terraform resources should already be tested and versioned by the resource owner. Having to write more tests and manage more module versions adds significant overhead. Not surprisingly, Hashicorp also tends to think this is usually a bad idea <a href="https://developer.hashicorp.com/terraform/language/modules/develop#when-to-write-a-module" target="_blank" style="text-decoration:none">&#11016;</a>
 
 _*Disclaimer:_ It's okay to modularize a single resource if configured for a very specific use case.

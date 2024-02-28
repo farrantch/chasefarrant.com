@@ -1,6 +1,5 @@
 ---
-date_created: '2023-02-23'
-date_updated: '2024-01-20'
+date: '2023-02-23'
 description: Here are some important practices that every CloudFormation developer should know.
 layout: layouts/base.njk
 tags:
@@ -11,8 +10,7 @@ title: AWS CloudFormation Best Practices
 ---
 
 # {{ title }}
-_date created: {{ date_created }}_ \
-_last updated: {{ date_updated }}_
+_Created on {{ page.date | asPostDate }}_
 
 
 &nbsp;
