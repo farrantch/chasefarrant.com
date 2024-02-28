@@ -5,7 +5,6 @@ description: To foster early growth, steer clear of over-engineering.
 layout: layouts/base.njk
 tags:
   - architecture
-  - blog
   - devops
   - microservices
 title: Infrastructure Patterns That Startups Should Avoid
