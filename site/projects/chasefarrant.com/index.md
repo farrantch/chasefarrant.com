@@ -19,8 +19,9 @@ Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Be
  - [https://motherfuckingwebsite.com](https://motherfuckingwebsite.com)
  - [https://berkshirehathaway.com](https://berkshirehathaway.com)
  - [https://www.vulfpeck.com](https://www.vulfpeck.com/)
+ - [https://www.paulgraham.com/](https://www.paulgraham.com/)
  
- So, ideally, this website would be of a similar nature. I also wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. I ended up stumbling upon the [eleventy](https://www.11ty.dev/) (11ty) framework, and it fits this niche perfectly.
+ So, ideally, this website would be of a similar nature. I wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. I ended up stumbling upon the [eleventy](https://www.11ty.dev/) (11ty) framework, and it fits this niche perfectly.
 
 
 &nbsp;
@@ -109,6 +110,10 @@ Instead of external links to Google Fonts, I downloaded the fonts locally using 
   - Code - _Jetbrains Mono_
 
  Doing this reduces the number of API calls to external URLs and improves performance.
+
+&nbsp;
+## Image Gallery
+For posts that need an image gallery, I use the method described [here](https://www.bash.lk/posts/tech/1-elventy-image-gallery/) along with the [Photoswipe](https://photoswipe.com/) library.
 
 &nbsp;
 ## Colors:
