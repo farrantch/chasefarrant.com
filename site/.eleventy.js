@@ -69,6 +69,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('projects/**/*.webp')
     eleventyConfig.addPassthroughCopy('blog/**/*.jpg')
     eleventyConfig.addPassthroughCopy('projects/**/*.jpg')
+    eleventyConfig.addPassthroughCopy('error')
     eleventyConfig.addPassthroughCopy('css')
     eleventyConfig.addPassthroughCopy('js')
     eleventyConfig.addPassthroughCopy('fonts')
