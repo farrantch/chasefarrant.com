@@ -4,7 +4,7 @@ layout: layouts/base.njk
 ---
 
 # About
-During the day, I'm an Engineer specializing in automation, cloud, devops, and backend development. I love to keep things simple, and this site is no exception.
+By day, I'm an Engineer specializing in automation, cloud, devops, and backend development. I love to keep things simple, and this site is no exception.
 
 After hours, I like to dabble in other projects that interest me. If you have a project needing DevSecOps or Cloud expertise, hit me up! I also have experience quickly spinning up backend APIs with Python and FastAPI. I am not a front-end web developer (in case it wasn't obvious). However, I embrace my weakness by utilizing simple design philosophies. This site is glued together with plain ol' HTML and CSS.
 

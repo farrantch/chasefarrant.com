@@ -18,8 +18,10 @@ _Created on {{ page.date | asPostDate }}_
 Confession time... &nbsp; _I kinda loathe front-end web development._  &nbsp; Because of this, I have a huge soft spot for minimalist websites that convey information cleanly and concisely. Some famous examples include:
  - [https://motherfuckingwebsite.com](https://motherfuckingwebsite.com)
  - [https://berkshirehathaway.com](https://berkshirehathaway.com)
- - [https://www.vulfpeck.com](https://www.vulfpeck.com/)
  - [https://www.paulgraham.com/](https://www.paulgraham.com/)
+ - [https://www.craigslist.org/](https://www.craigslist.org/)
+ - [https://www.vulfpeck.com](https://www.vulfpeck.com/)
+ - [https://news.ycombinator.com/](https://news.ycombinator.com/)
  
  So, ideally, this website would be of a similar nature. I wanted something super lightweight that I could easily stand up and maintain without worrying about the underlying framework getting in the way. I ended up stumbling upon the [eleventy](https://www.11ty.dev/) (11ty) framework, and it fits this niche perfectly.
 
@@ -38,7 +40,7 @@ Here are a few 11ty plugins that I enabled:
 
 &nbsp;
 ## Cache Busting
-I added a "cache buster" that generates a unique URL for static files. This functionality allows users to immediately see changes instead of waiting for the cache TTL to expire. During the build, it inserts a UNIX datetime as a query parameter to generate a unique URL for static files. This functionality is primarily used on the static css files:
+I added a "cache buster" that generates a unique URL for static files. This functionality allows users to immediately see changes instead of waiting for the cache TTL to expire. During the build, it inserts a UNIX datetime as a query parameter to generate a unique URL for static files. This functionality is primarily used on the static CSS and JS files:
 
 ```hbs
   eleventyConfig.addFilter("bust", (url) => {

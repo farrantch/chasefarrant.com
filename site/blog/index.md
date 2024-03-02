@@ -6,7 +6,7 @@ layout: layouts/base.njk
 
 # Blog
 
-Here are my thoughts and opinions on various topics, some software-related and others not. These posts can be highly opinionated, subject to change over time, and may not reflect my current views.
+My thoughts and ramblings on various topics, some software-related and others not. These posts are opinionated, subject to change over time, and should be taken with minuscule granules of sodium.
 
 # Latest
 

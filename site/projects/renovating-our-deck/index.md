@@ -2,6 +2,7 @@
 date: '2021-04-11'
 layout: layouts/base.njk
 tags:
+  - projects
   - home-improvement
 title: Finishing Our Basement
 ---
