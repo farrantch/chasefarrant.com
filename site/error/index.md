@@ -14,6 +14,6 @@ permalink: error.html
 
 
 <!-- ![alt-text](./error.jpeg) -->
-<img src="{{ './error.jpeg' | url }}" style="display:block;margin-left:auto;margin-right:auto;max-width:400px;width:400px" />
+<img src="{{ './error/error.jpeg' | url }}" style="display:block;margin-left:auto;margin-right:auto;max-width:400px;width:400px" />
 
 &nbsp;
