@@ -4,9 +4,11 @@ layout: layouts/base.njk
 ---
 
 # Welcome
-I originally started this site for fun and to document/share my work with others. However, it's now morphed into something bigger than that.
+I started this site for fun and to document and share my work with others.
+<!-- However, it's now morphed into something bigger than that. -->
 
-I'm now using this site to force myself to explore and learn more about topics before writing about them. If I cannot thoroughly convey my thoughts about a topic in a post, do I _really_ understand it well enough?
+<!-- I'm now using this site to force myself to explore and learn more about topics before writing about them. -->
+<!-- If I cannot thoroughly convey my thoughts about a topic in a post, do I _really_ understand it well enough? -->
 
 <br>
 

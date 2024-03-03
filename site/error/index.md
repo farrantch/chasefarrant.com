@@ -1,6 +1,7 @@
 ---
 description: The personal website of Chase Farrant.
 layout: layouts/base.njk
+permalink: error.html
 ---
 
 <div style="text-align:center">
