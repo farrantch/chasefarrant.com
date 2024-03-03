@@ -37,7 +37,7 @@ With the built-in functionality of multiple languages and frameworks, developers
 Here are a few 11ty plugins that I enabled:
 - __Favicon Generator__ - Automatically generates all the different favicons required to provide the best experience for all users.
 - __Lazy Load Images__ - Inserts a blurry placeholder while images are still loading, providing a better user experience while the website is loading.
-- __Luxon__ - Used to easily format dates.
+- __Luxon__ - Used to format dates into a readable format.
 - __Photoswipe__ - Cleanly scroll through image galleries on select pages.
 
 &nbsp;
