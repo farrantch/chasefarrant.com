@@ -2,7 +2,7 @@
 
 The source code for my personal website. More information [here](https://chasefarrant.com/projects/chasefarrant.com/).
 
-![Build](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![Build](https://github.com/farrantch/chasefarrant.com/actions/workflows/build.yml/badge.svg)
 
 &nbsp;
 ## Install Dependencies
