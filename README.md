@@ -1,6 +1,6 @@
 # chasefarrant.com
 
-The source code for my personal website. More information [here](http://localhost:8081/projects/chasefarrant.com/).
+The source code for my personal website. More information [here](https://chasefarrant.com/projects/chasefarrant.com/).
 
 &nbsp;
 ## Install Dependencies
