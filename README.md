@@ -2,6 +2,8 @@
 
 The source code for my personal website. More information [here](https://chasefarrant.com/projects/chasefarrant.com/).
 
+![Build](https://github.com/farrantch/chasefarrant.com/actions/workflows/build.yaml/badge.svg)
+
 &nbsp;
 ## Install Dependencies
 
